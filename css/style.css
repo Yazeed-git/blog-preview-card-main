@@ -1,0 +1,110 @@
+/* General styles */
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    line-height: 1.6;
+}
+
+@font-face {
+    font-family: figtree;
+    src: url(../assets/fonts/Figtree-VariableFont_wght.ttf);
+}
+
+body{
+    font-family: figtree, Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: hsl(47, 89%, 63%);
+    height: 100vh;
+    padding: 2em;
+}
+
+.card{
+    background-color: hsl(0, 0%, 100%);
+    padding: 2em;
+    border-radius: 24px;
+    border: 1px solid hsl(0, 0%, 7%);
+    box-shadow: 10px 10px 0px 0px hsl(0, 0%, 7%);
+    margin-bottom: 1em;
+    transition: all .2s ease-in;
+}
+
+.card .background{
+    display: block;
+    height: 295px;
+    background-image: url('../assets/images/illustration-article.svg');
+    background-size: 122%;
+    background-position: center;
+    border-radius: 12px;
+    background-repeat: no-repeat;
+    margin-bottom: 2em;
+}
+
+.card a{
+    display: inline-block;
+    background-color: hsl(47, 89%, 63%);
+    padding: 0.5em 0.75em;
+    font-weight: 900;
+    color: hsl(0, 0%, 7%);
+    border-radius: 6px;
+    margin-bottom: 1em;
+}
+
+.card_date{
+    font-weight: 600;
+    margin-bottom: 1em;
+}
+
+.card_title{
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 0.5em;
+    transition: color .2s ease-in;
+
+}
+
+.card_desc{
+    font-weight: 400;
+    color: hsl(0, 0%, 50%);
+    line-height: 1.5;
+    padding-right: 2.75em;
+    margin-bottom: 2em;
+}
+
+.card_profile{
+    display: flex;
+    align-items: center;
+}
+
+.card_profile img{
+    width: 50px;
+    height: 50px;
+    margin-right: 1em;
+}
+
+.card_profile p{
+    font-size: 1.05rem;
+    font-weight: 900;
+}
+
+.attribution {
+    font-size: 11px; text-align: center;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media screen and (min-width:900px) {
+    .card:hover .card_title{
+        color: hsl(47, 89%, 63%);
+    }
+    .card:hover{
+        box-shadow: 16px 16px 0px 0px hsl(0, 0%, 7%);
+    }
+
+
+}
